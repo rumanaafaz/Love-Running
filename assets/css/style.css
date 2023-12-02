@@ -273,6 +273,15 @@ hr {
 }
 
 
+/* Media Query: large or landscape phones (576px and up) */
+
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+
+    }
+}
 
 /* Media Query: tablets and larger (768px and up) */
 
@@ -328,7 +337,6 @@ hr {
         display: flex;
         flex-direction: column;
         width: 100%;
-
     }
 
     #benefits-physical>div,
@@ -340,51 +348,46 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
+}
 
 
+/* Media Query: small laptops (992px and up) */
 
-    /* Media Query: small laptops (992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
 
-    @media screen and (min-width: 992px) {
-        #menu a:hover {
-            border-bottom: 1px solid #3a3a3a;
-        }
+
+/* Media Querry: Screens of 1220px and wider */
+
+@media screen and (min-width: 1200px) {
+
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
     }
 
-
-    /* Media Querry: Screens of 1220px and wider */
-
-    @media screen and (min-width: 1200px) {
-
-        /* Reasons section */
-        #benefits {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #benefits>div {
-            flex: 1;
-        }
-
-        #benefits-image {
-            order: 0;
-        }
-
-        #benefits-mental {
-            order: 1;
-        }
-
-        #benefits-mental>div {
-            align-self: flex-start;
-        }
-
-        #benefits-physical>div {
-            align-self: flex-end;
-        }
-
+    #benefits>div {
+        flex: 1;
     }
 
+    #benefits-image {
+        order: 0;
+    }
 
+    #benefits-mental {
+        order: 1;
+    }
 
+    #benefits-mental>div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical>div {
+        align-self: flex-end;
+    }
 
 }
