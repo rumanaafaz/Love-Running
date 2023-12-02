@@ -144,7 +144,7 @@ main {
 
 }
 
-
+/* Reasons Section */
 
 #reasons {
     width: 90%;
@@ -188,7 +188,6 @@ hr {
     max-height: 300px;
 
 }
-
 
 
 #benefits-image {
@@ -260,6 +259,27 @@ hr {
     #cover-text {
         width: 300px;
         right: 50px;
+    }
+
+
+
+    /* Reasons Section */
+    #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
+
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
     }
 
 
