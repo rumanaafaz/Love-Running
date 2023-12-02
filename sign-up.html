@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Meta tags for search engines-->
+    <!-- Meta tags for search engines -->
     <meta
       name="description"
       content="Love Running. Club for runners in Dublin, Ireland. Urban running, trail rnning. Dublin docklands and Phoenix Park"
@@ -13,11 +13,10 @@
       name="keywords"
       content="love running, run, running club, runners, Ireland, Dublin, sport, exercise"
     />
-    <!--Link-->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!--Title-->
-    <title>Love Running</title>
-    <!--Favicon-->
+
+    <!-- Title -->
+    <title>Sign Up</title>
+    <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -35,6 +34,8 @@
       sizes="16x16"
       href="assets/favicon/favicon-16x16.png"
     />
+    <!--Link-->
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
@@ -60,10 +61,84 @@
 
     <!--Main Content-->
     <main>
-        
-    <section id="hero">
+      <section id="hero"></section>
 
-    </section>
+      <section id="signup">
+        <form
+          action="https://formdump.codeinstitute.net"
+          id="signup_form"
+          method="post"
+        >
+          <h2>
+            <i class="fa-solid fa-heart-pulse"></i>Let's get you signed up!
+          </h2>
+
+          <label for="first_name">First Name</label>
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            class="text-input"
+            required
+          />
+          <br />
+
+          <label for="last_name">Last Name</label>
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            class="text-input"
+            required
+          />
+          <br />
+          <label for="email_address">Email Address</label>
+          <input
+            type="email"
+            name="email_address"
+            id="email_address"
+            class="text-input"
+            required
+          />
+          <br />
+          <!-- Radio Buttons -->
+          <div class="radio-buttons">
+            <div>
+              <label for="road">Road</label>
+              <input
+                type="radio"
+                name="running_preference"
+                id="road"
+                value="road"
+                required
+                checked
+              />
+            </div>
+            <div>
+              <label for="trail">Trail</label>
+              <input
+                type="radio"
+                name="running_preference"
+                id="trail"
+                value="trail"
+                required
+              />
+            </div>
+            <div>
+              <label for="both">Both</label>
+              <input
+                type="radio"
+                name="running_preference"
+                id="both"
+                value="both"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="join_buttom">Let's Run!</button>
+        </form>
+      </section>
     </main>
 
     <!--Footer-->
