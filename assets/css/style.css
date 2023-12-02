@@ -36,6 +36,12 @@ h3 {
 
 
 
+.hidden-heading {
+    display: none;
+}
+
+
+
 /*Header */
 
 header {
