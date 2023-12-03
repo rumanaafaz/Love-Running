@@ -374,6 +374,7 @@ hr {
     #signup {
         background-position: center;
         position: relative;
+        height: 900px;
     }
 
     #signup-form {
